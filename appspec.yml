@@ -24,10 +24,10 @@ hooks:
 
   AfterInstall:
     - location: scripts/after_install.sh
-      timeout: 300
+      timeout: 1000
       runas: root
 
   ApplicationStart:
     - location: scripts/start_server.sh     
-      timeout: 300
+      timeout: 500
       runas: root
